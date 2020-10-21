@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+</head>
+<body>
+<!-- 第一个图表 -->
+<div id="first" style="width: 600px;height:400px;"></div>
+<!-- 第二个图表 -->
+<div id="second" style="width: 600px;height:400px;"></div>
+</body>
+</html>
+<script type="text/javascript">
+    // ------配置图表1，各个性化图表配置方法详见官网-----
+    var firstChart = echarts.init(document.getElementById("first"));
+    var option = {};
+    firstChart.setOption(option);
+
+    // -----配置图表2-----
+    var secondChart = echarts.init(document.getElementById("second"));
+    option={};
+    secondChart.setOption(option);
+</script>
